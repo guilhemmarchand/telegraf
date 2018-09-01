@@ -7,7 +7,7 @@ data formats.  For data_formats that support batching, metrics are sent in batch
 
 ```toml
 # A plugin that can transmit metrics over HTTP
-[[outputs.http]]
+[[outputs.splunk_hec]]
   ## URL is the address to send metrics to
   url = "https://127.0.0.1/services/collector/raw"
 
@@ -34,7 +34,7 @@ data formats.  For data_formats that support batching, metrics are sent in batch
   # data_format = "influx"
   
   ## Additional HTTP headers
-  # [outputs.http.headers]
+  # [outputs.splunk_hec.headers]
   #   # Should be set manually to "application/json" for json data_format
   #   Content-Type = "text/plain; charset=utf-8"
 ```
